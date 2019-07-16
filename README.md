@@ -1,6 +1,11 @@
-# 目前xdotool无法在本机(Arch + Gnome + terminator)终端中正常运行，程序暂时不完全可用 
-# 待到来日再重写, 还有其他问题，等我一一解决...
-# 不过在其他窗口中目前测试的都是可以正常运行的
+# NOTE: 
+## 电脑如果安装了wayland，需要禁用，不然终端中无法正常使用xdotool,方法如下：
+1. 打开/etc/gdm/custom.conf
+2. 添加如下两行
+```
+[daemon]
+WaylandEnable=false
+```
 
 # 程序功能
 * 屏幕取词翻译
